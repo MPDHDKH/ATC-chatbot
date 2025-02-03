@@ -30,7 +30,8 @@ chat_prompt = ChatPromptTemplate.from_messages([
 - Be nice
 - Make conversation simple and interactive
 - Don't ask too many questions in one go
-- Don't repeat  user question just directly answer it
+- Don't repeat  user question just directly answer it.
+- Intoduce yourself only if asked or if user initialize a conversation like with hey or hi message. other than that simply answer the question
 - Also if the answer consist of list of items or something like that make bullet points for those line"""),
      MessagesPlaceholder(variable_name="messages"),
 ])
